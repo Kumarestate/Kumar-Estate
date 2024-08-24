@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Kumar Estate</title>
+    <link rel="stylesheet" href="C:\Users\abc\Desktop\website\main-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="C:\Users\abc\Desktop\website\logo.jpeg" alt="Kumar Estate Logo"> <!-- Replace with actual logo path -->
+        </div>
+        <div class="site-title">Kumar Estate</div>
+        <nav>
+            <ul>
+                <li><a href="C:\Users\abc\Desktop\website\index.html">Home</a></li>
+                <li><a href="C:\Users\abc\Desktop\website\properties.html">Listings</a></li>
+                <li><a href="C:\Users\abc\Desktop\website\our-story.html">About</a></li>
+                <li><a href="C:\Users\abc\Desktop\website\get-in-touch.html">Contact</a></li>
+                <li><a href="C:\Users\abc\Desktop\website\user-login.html">Login</a></li>
+                <li><a href="C:\Users\abc\Desktop\website\register.html">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="filters">
+            <h2>Filter Properties</h2>
+            <form id="filter-form">
+                <label for="location">Location:</label>
+                <select id="location" name="location">
+                    <option value="gurugram">Gurugram</option>
+                    <option value="dwarka">Dwarka</option>
+                </select>
+
+                <label for="bhk">BHK:</label>
+                <select id="bhk" name="bhk">
+                    <option value="1bhk">1 BHK</option>
+                    <option value="2bhk">2 BHK</option>
+                    <option value="3bhk">3 BHK</option>
+                    <option value="4bhk">4 BHK</option>
+                </select>
+
+                <label for="property-type">Property Type:</label>
+                <select id="property-type" name="property-type">
+                    <option value="residential">Residential</option>
+                    <option value="plot">Plot</option>
+                    <option value="commercial">Commercial</option>
+                </select>
+
+                <label for="transaction">Transaction:</label>
+                <select id="transaction" name="transaction">
+                    <option value="rent">Rent</option>
+                    <option value="sell">Sell</option>
+                </select>
+
+                <label for="sector">Sector:</label>
+                <select id="sector" name="sector">
+                    <option value="1">Sector 1</option>
+                    <option value="2">Sector 2</option>
+<option value="3">Sector 3</option>
+<option value="4">Sector 4</option>
+<option value="5">Sector 5</option>
+<option value="6">Sector 6</option>
+<option value="7">Sector 7</option>
+<option value="8">Sector 8</option>
+<option value="9">Sector 9</option>
+<option value="10">Sector 10</option>
+<option value="11">Sector 11</option>
+<option value="12">Sector 12</option>
+<option value="13">Sector 13</option>
+<option value="14">Sector 14</option>
+<option value="15">Sector 15</option>
+                    <!-- Add other sector options as needed -->
+                </select>
+
+                <button type="submit">Search</button>
+            </form>
+        </section>
+  <center>      <section class="property-listings">
+            <h2>Property Listings</h2>
+            <div class="property" data-location="gurugram" data-bhk="3bhk" data-type="residential" data-transaction="sell">
+                <img src="property1.jpg" alt="Property 1">
+                <h3>Beautiful Family Home</h3>
+                <p>3 BHK - Gurgaon</p>
+                <button onclick="viewDetails('property1.html')">View Details</button>
+            </div>
+            <div class="property" data-location="dwarka" data-bhk="2bhk" data-type="residential" data-transaction="rent">
+                <img src="C:\Users\abc\Desktop\website\property2.jpg" alt="Property 2">
+                <h3>Modern Apartment</h3>
+                <p>2 BHK - Dwarka</p>
+                <button onclick="viewDetails('property2.html')">View Details</button>
+            </div>
+            <div class="property" data-location="noida" data-bhk="4bhk" data-type="residential" data-transaction="sell">
+                <img src="C:\Users\abc\Desktop\website\property3.jpg" alt="Property 3">
+                <h3>Luxury Villa</h3>
+                <p>4 BHK - Noida</p>
+                <button onclick="viewDetails('property3.html')">View Details</button>
+            </div>
+        </section>
+        <section class="pagination">
+            <button>Previous</button>
+            <button>Next</button>
+        </section>
+        <section class="map">
+            <h2>Property Locations</h2>
+            <div id="map"></div>
+        </section>                    </center>
+    </main>
+    <footer>
+        <p>Contact us: +91-9899066750|kumarestate1@gmail.com </p>
+        
+    </footer>
+    <script src="C:\Users\abc\Desktop\website\script.js"></script>
+</body>
+</html>
